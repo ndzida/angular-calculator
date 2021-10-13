@@ -1,0 +1,33 @@
+<div class="calculator">
+
+    <input type="text" class="calculator-screen" [value]="currentNumber" disabled />
+  
+    <div class="calculator-keys">
+
+      <button type="button" (click) = "getSingleOp('1/x')" class="operator">1/x</button>
+      <button type="button" (click) = "getSingleOp('sqrt(x)')" class="operator">&radic;x</button>
+      <button type="button" (click) = "getSingleOp('x^2')" class="operator">x<sup>2</sup></button>
+      <button type="button" (click) = "getOperation('/')" class="operator">&divide;</button>
+  
+      <button type="button" (click) = "getNumber('7')">7</button>
+      <button type="button" (click) = "getNumber('8')">8</button>
+      <button type="button" (click) = "getNumber('9')">9</button>
+      <button type="button" (click) = "getOperation('*')" class="operator">&times;</button>
+      
+      <button type="button" (click) = "getNumber('4')">4</button>
+      <button type="button" (click) = "getNumber('5')">5</button>
+      <button type="button" (click) = "getNumber('6')">6</button>
+      <button type="button" (click) = "getOperation('-')" class="operator">-</button>
+      
+      <button type="button" (click) = "getNumber('1')">1</button>
+      <button type="button" (click) = "getNumber('2')">2</button>
+      <button type="button" (click) = "getNumber('3')">3</button>
+      <button type="button" (click) = "getOperation('+')" class="operator">+</button>
+
+      <button type="button" (click) = "clear()" class="all-clear">AC</button>
+      <button type="button" (click) = "getNumber('0')">0</button>
+      <button type="button" (click) = "getDecimal()">.</button>
+      <button type="button" (click) = "getOperation('=')" class="equal-sign">=</button>
+  
+    </div>
+  </div>
